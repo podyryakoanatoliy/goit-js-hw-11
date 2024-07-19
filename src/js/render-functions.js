@@ -56,3 +56,7 @@ export function onCreateGalleryPhoto(data) {
   allGallery.insertAdjacentHTML('beforeend', onCreateMarkup(data.hits));
   userDataLog.refresh();
 }
+
+export function clearGallery() {
+  allGallery.innerHTML = '';
+}

@@ -11,6 +11,7 @@ const options = {
 
 export function onSearchPhotoFromText(query) {
 
+
     
     const URL = `https://pixabay.com/api/?key=${options.key}&q=${query}&image_type=${options.image_type}&orientation=${options.orientation}&safesearch=${options.safesearch}`;
     return fetch(URL)
